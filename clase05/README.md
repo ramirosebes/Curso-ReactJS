@@ -1,3 +1,2 @@
-# Clase 04
-## useState y useEffect hooks
-## Ciclo de vida de los componentes
+# Clase 05
+## Promesas y .map()
