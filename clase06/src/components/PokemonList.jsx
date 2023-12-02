@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 function PokemonList() {
 
-    const [currentList, setCurrentList] = useState({});
+    const [currentList, setCurrentList] = useState({});  //[] array vacio // {} objeto vacio
     const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon?limit=5&offset=0");
     const [next, setNext] = useState("");
     const [previous, setPrevious] = useState("");
