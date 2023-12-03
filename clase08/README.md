@@ -6,6 +6,7 @@
 #### Nostros.jsx
 Cuando colocamos un "return" dentro de un useEffect esto es lo que se ejacutara cuando el componente se desmonte
 
+```
 useEffect(() => {
         //Funcion x
         window.addEventListener("click", () => {
@@ -19,21 +20,25 @@ useEffect(() => {
             })
         }
     }, [])
+```
 
 En este caso como es una funcion anonima (no declarada o referenciada) las toma como funciones distintas y por lo tanto no la elimina
 
 #### ItemCount.jsx
+```
 <div className='item-count'>
     <button onClick={handleRestar}>-</button>
     <p>{cantidad}</p>
     <button onClick={handleSumar}>+</button>
 </div>
-
+```
+```
 <div className='item-count'>
     <button onClick={() => {cantidad > 1 && setCantidad(cantidad - 1)}}>-</button>
     <p>{cantidad}</p>
     <button onClick={() => {setCantidad(cantidad + 1)}}>+</button>
 </div>
+```
 
 Se pueden crear funciones anonimas dentro del onClick
 
